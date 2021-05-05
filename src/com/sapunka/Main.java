@@ -9,18 +9,19 @@ package com.sapunka;
                 String[] strings = {"Freetown", "BO", "Makeni", "Kenema"};
 
             //  Passing Array of Integer Object to invoke the generic print method
-                System.out.println("Array Integer list");
+                System.out.println("ARRAY INTEGERS LEAST");
                 GenericMethodDemo.print(integers);
                 System.out.println("**************************");
+
             //  Invoke print with an array of string
-                System.out.println("Array String list ");
+                System.out.println("ARRAY STRING LEAST");
                 GenericMethodDemo.print(strings);
                 System.out.println("**************************");
+
             //  Invock the array of doubles
-                System.out.println("Array Double list");
+                System.out.println("ARRAY DOUBLES LEAST");
                 GenericMethodDemo.print(doubles);
             }
-
             public static <E> void print(E[] list) {
                 for (E e : list) {
                     System.out.print(e + "");
